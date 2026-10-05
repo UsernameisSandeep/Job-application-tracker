@@ -1,16 +1,77 @@
-# React + Vite
+# 💼 Job Application Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive Job Application Tracker built with React.js that helps users manage and organize their job applications in one place.
 
-Currently, two official plugins are available:
+## 🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add new job applications
+- Edit existing applications
+- Delete applications
+- Search applications by company or role
+- Filter applications by status
+- Sort applications by newest or oldest date
+- Track how many days ago an application was submitted
+- Dashboard with application statistics
+- Dark Mode / Light Mode
+- Responsive design for desktop and mobile
+- Data persistence using Browser Local Storage
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React.js
+- React Hooks
+  - useState
+  - useEffect
+- Local Storage
+- Vite
+- Git
+- GitHub
 
-## Expanding the Oxlint configuration
+## 📊 Dashboard
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The dashboard displays:
+
+- Total Applications
+- Applied
+- Interviews
+- Selected
+- Rejected
+
+## 🔍 Application Management
+
+Users can:
+
+1. Add company name
+2. Add job role
+3. Add location
+4. Select application date
+5. Select application status
+6. Edit application details
+7. Delete applications
+
+## 🔎 Search and Filter
+
+The application list can be:
+
+- Searched by company name
+- Searched by job role
+- Filtered by application status
+- Sorted by newest application
+- Sorted by oldest application
+
+## 📅 Application Tracking
+
+The application table displays:
+
+- Application date
+- Number of days since applying
+- Current application status
+
+Example:
+
+```text
+01 Oct 2026
+5 days ago
