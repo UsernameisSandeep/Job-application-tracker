@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fb;
+  transition: 0.3s;
+}
+
+/* Header */
+
+.header {
+  background: #172554;
+  color: white;
+  padding: 30px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  opacity: 0.85;
+}
+
+/* Theme Button */
+
+.theme-button {
+  background: white;
+  color: #172554;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.theme-button:hover {
+  opacity: 0.9;
+}
+
+/* Container */
+
+.container {
+  width: 86%;
+  max-width: 1400px;
+  margin: 30px auto;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.card p {
+  margin: 12px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Form */
+
+.form-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+  margin-top: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+  color: #172033;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #93c5fd;
+}
+
+.form-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.primary-button,
+.cancel-button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+}
+
+.cancel-button {
+  background: #64748b;
+  color: white;
+}
+
+.primary-button:hover,
+.cancel-button:hover {
+  opacity: 0.9;
+}
+
+/* Filters */
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* Applications */
+
+.applications {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.table-header h2 {
+  margin: 0;
+}
+
+.table-header span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
+}
+
+/* Days ago */
+
+.days-ago {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Status Badges */
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status.interview {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status.selected {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Action Buttons */
+
+.action-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.edit-button,
+.delete-button {
+  border: none;
+  padding: 7px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.edit-button {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+/* Empty State */
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: #64748b;
+}
+
+.empty-state h3 {
+  color: #334155;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .header {
+  background: #0d1b3e;
+}
+
+.dark-mode .card,
+.dark-mode .form-section,
+.dark-mode .applications {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background: #2a2a2a;
+  color: white;
+  border-color: #555;
+}
+
+.dark-mode input::placeholder {
+  color: #aaa;
+}
+
+.dark-mode th {
+  background: #292929;
+  color: #ddd;
+}
+
+.dark-mode th,
+.dark-mode td {
+  border-color: #444;
+}
+
+.dark-mode .table-header span,
+.dark-mode .days-ago {
+  color: #aaa;
+}
+
+.dark-mode .empty-state {
+  color: #aaa;
+}
+
+.dark-mode .empty-state h3 {
+  color: white;
+}
+
+/* Dark Status Badges */
+
+.dark-mode .status.applied {
+  background: #1e3a8a;
+  color: #bfdbfe;
+}
+
+.dark-mode .status.interview {
+  background: #78350f;
+  color: #fde68a;
+}
+
+.dark-mode .status.selected {
+  background: #14532d;
+  color: #bbf7d0;
+}
+
+.dark-mode .status.rejected {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .applications {
+    padding: 15px;
+  }
+}
